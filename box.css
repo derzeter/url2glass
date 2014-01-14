@@ -1,0 +1,227 @@
+body {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #ccc;
+	background-color: #333;
+	}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color:  #ccc;
+	outline: none;
+	}
+a:visited {
+	color:  #ccc;
+	}
+a:active {
+	color:  #ccc;
+	}
+a:hover {
+	color: #ccc;
+	text-decoration: underline;
+	}
+.ahem {
+	display: none;
+	}
+strong, b {
+	font-weight: bold;
+	}
+p {
+	font-size: 12px;
+	line-height: 22px;
+	margin-top: 20px;
+	margin-bottom: 10px; 
+	}
+
+/* weird ie5win bug: all line-height to font-size ratios must agree or box gets pushed around. UPDATE: this has turned out to be very rare. my current recommendation is IGNORE this warning. at the moment i'm leaving it in only in 
+case the issue turns up again. possibly the original bug in march 2001 was caused by an unusual combination of factors, although this solved it at the time.*/
+
+h1 {
+	font-size: 24px;
+	line-height: 44px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+h2 {
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+h3 {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+h4 {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+h5 {
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+h6 {
+	font-size: 10px;
+	line-height: 18px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+img {
+	border: 0;
+	}
+.nowrap {
+	white-space: nowrap;
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+/* must be combined with nobr in html for ie5win */
+	}
+.tiny {
+	font-size: 9px;
+	line-height: 16px;
+	margin-top: 15px;
+	margin-bottom: 5px; 
+	}
+#top {
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	border: 0px;
+	background: #000;
+	height: 100px; /* ie5win fudge begins */
+	font-family:Impact, Charcoal, sans-serif;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	height: 80px;
+	}
+html>body #top {
+	height: 80px; /* ie5win fudge ends */
+	}
+#top1 {
+        background: #333;
+        height: 13px; /* ie5win fudge ends */
+
+     }
+#top2 {
+        background: #dd0000;
+        height: 2px; /* ie5win fudge ends */
+     }
+#left {
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	margin: 0px;
+	padding: 10px;
+	border: 0px;
+	background: #333;
+	width: 150px; /* ie5win fudge begins */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 130px;
+	}
+html>body #left {
+	width: 130px; /* ie5win fudge ends */
+	}
+#middle {
+	padding: 10px;
+	border: 0px;
+	background: #666;
+	margin: 0px 150px 0px 150px;
+	}
+#right {
+	position: absolute;
+	top: 100px;
+	right: 0px; /* Opera5.02 will show a space at right when there is no scroll bar */
+	margin: 0px;
+	padding: 10px;
+	border: 0px;
+	background: #333;
+	width: 150px; /* ie5win fudge begins */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 130px;
+	}
+html>body #right {
+	width: 130px; /* ie5win fudge ends */
+	}
+pre {
+	font-size: 12px;
+	line-height: 22px;
+	margin-top: 20px;
+	margin-bottom: 10px; 
+	}
+form {
+  padding-right: 20px !important;
+}
+form input[type=text],
+form input[type=password],
+form input[type=submit] {
+  font-family: 'Roboto';
+}
+form input[type=text] {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  background: #fff;
+  border: none;
+  color: #136899;
+  outline: none;
+}
+.button {
+    border: none;
+    display: block;
+    background: #136899;
+    height: 40px;
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    /*box-shadow: 0px 3px 1px #2075aa;*/
+  	-webkit-transition: all 0.15s linear;
+	  -moz-transition: all 0.15s linear;
+	  transition: all 0.15s linear;
+}
+
+.button:hover {
+  background: #1e75aa;
+  /*box-shadow: 0 3px 1px #237bb2;*/
+}
+
+.button:active {
+  background: #136899;
+  /*box-shadow: 0 3px 1px #0f608c;*/
+}
+
+::-webkit-input-placeholder {
+  color: #e74c3c;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #e74c3c;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #e74c3c;
+}
+:-ms-input-placeholder {
+  color: #e74c3c;
+}
+.tdtxt {
+  font-family: 'Roboto';
+  padding-left: 0px;
+  color: #000000;
+}
